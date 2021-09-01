@@ -37,4 +37,8 @@ pcm report weird results. An easier approach, if only one process is saturating 
 
 [Interactive linux kernel APIs](https://makelinux.github.io/kernel/map/)
 
+[Accurate Throughput Prediction of Basic Blocks on Recent Intel Microarchitectures](https://arxiv.org/pdf/2107.14210.pdf)
+Came to know about this paper while listening to this [podcast](https://cppcast.com/performance-tuning/)
+More info could be found at [here](https://uops.info/index.html) and [here](https://github.com/andreas-abel/uiCA)
+
 I bookmark the following sites to keep track of the best papers in this field [link](https://www.usenix.org/conferences/best-papers) [link2](https://www.sigops.org/awards/hof/)
