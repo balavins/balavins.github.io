@@ -39,8 +39,9 @@ An in-depth analysis shows that over the past seven years, core
 kernel subsystems have been forced to accommodate an increasing number of security enhancements and new features
 ```
 
-[Demikernel](http://irenezhang.net//papers/demikernel-hotos19.pdf). 
-There is a blog [post](http://irenezhang.net/blog/2019/05/21/demikernel.html) on this as well
+
+Yet another paper, proving that bypassing linux kernel yields significant benefits is [Demikernel](http://irenezhang.net//papers/demikernel-hotos19.pdf). 
+There is a blog [post](http://irenezhang.net/blog/2019/05/21/demikernel.html) on this as well.
 
 [LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation](https://www.usenix.org/conference/osdi18/presentation/shan)
 
