@@ -59,8 +59,13 @@ independent of the underlying cloud platform.
 ```
 I cannot imagine the complexity of their tooling platform to stitch EC2 nodes and deploy their query engine on top of it.
 Their execution engine seems to have all the bells and whistles of modern columnar query engines.
-The section called `LESSONS LEARNED AND OUTLOOK` is a must-read. I do not want to copy paste that entire section here
+The section called `LESSONS LEARNED AND OUTLOOK` is a must-read. I do not want to copy paste that entire section here.    
 
+
+[RocksDB](http://rocksdb.org/) is a quite [popular](https://rockset.com/blog/rocksdb-is-eating-the-database-world/) persistent key-value store built on top of LevelDB. 
+Their storage engine [performance](https://github.com/facebook/rocksdb/wiki/Performance-Benchmarks) is better due to a lot of optimizations to reduce read and write amplification.
+They had a paper in CIDR about using their [LSM trees](http://cidrdb.org/cidr2017/papers/p82-dong-cidr17.pdf) for efficient storage in SSDs.
+[Characterizing, Modeling, and Benchmarking RocksDB Key-Value Workloads at Facebook](https://www.usenix.org/conference/fast20/presentation/cao-zhichao) is an interesting analysis of the workloads running in RocksDB.  
 
 [The case for RAMClouds: scalable high-performance storage entirely in DRAM](https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf)
 
