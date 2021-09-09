@@ -28,5 +28,11 @@ replacing pairjoins with broadcast joins eliminates shuffles but adds
 a merge of the smaller input before broadcast
 ```
 
+[Micro-architectural Analysis of OLAP: Limitations and Opportunities](http://www.vldb.org/pvldb/vol13/p840-sirin.pdf)     
+Lessons learned section is a must-read. Compares execution time break-down of compiled queries with vectorization for various operators. 
+They compare multiple open-source and closed-souce databases. Would be nice to know which closed source databases they were.     
+
+
+
 Haven't read this one yet. Plan to do so when I can.
 [DIAMetrics: Benchmarking Query Engines at Scale](http://www.vldb.org/pvldb/vol13/p3285-gruenheid.pdf)
