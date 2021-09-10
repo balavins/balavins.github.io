@@ -45,6 +45,10 @@ There is a blog [post](http://irenezhang.net/blog/2019/05/21/demikernel.html) on
 
 [LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation](https://www.usenix.org/conference/osdi18/presentation/shan)
 
+[Faster IO through io\_uring](https://kernel-recipes.org/en/2019/talks/faster-io-through-io_uring/)
+An `IO` libarary that is faster than accessing using `aio` by using a ring based shared queue means of communication. `aio_read` is pretty common in databases 
+From the talk, Facebook created this to use with RocksDB, but seems it could bring about broader benefit.     
+
 [DAMON: Data Access Monitor](https://sjp38.github.io/post/damon/)     
 Pretty interesting tool. I would like to use this profiler and observe heatmap and wss of Apache Spark and other frameworks.
 
