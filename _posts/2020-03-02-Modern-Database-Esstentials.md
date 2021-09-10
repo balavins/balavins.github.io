@@ -87,6 +87,10 @@ Their storage engine [performance](https://github.com/facebook/rocksdb/wiki/Perf
 They had a paper in CIDR about using their [LSM trees](http://cidrdb.org/cidr2017/papers/p82-dong-cidr17.pdf) for efficient storage in SSDs.
 [Characterizing, Modeling, and Benchmarking RocksDB Key-Value Workloads at Facebook](https://www.usenix.org/conference/fast20/presentation/cao-zhichao) is an interesting analysis of the workloads running in RocksDB.  
 
+
+[The Seattle Report on Database Research on 2018](https://sigmodrecord.org/publications/sigmodRecord/1912/pdfs/07_Reports_Abadi.pdf)   
+
+
 [The case for RAMClouds: scalable high-performance storage entirely in DRAM](https://web.stanford.edu/~ouster/cgi-bin/papers/ramcloud.pdf)
 
 
