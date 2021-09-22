@@ -58,6 +58,21 @@ Vectorized engines have advantages in terms of
 One issue that always annoys me with code-generation (and has been covered in multiple papers), is that it becomes impossible to profile on an operator basis as
 too often, they are fused together for better performance.   
 
+[Massively Parallel Sort-Merge Joins in Main Memory Multi-Core Database Systems](http://vldb.org/pvldb/vol5/p1064_martina-cezaraalbutiu_vldb2012.pdf)
+NUMA aware sort merge joins. Essentially sort locally in each CPU core one table while redistributing partitions and sort globally the other one and let merge happen across NUMA boundaries with the understanding that multiple access over NUMA boundaries are amortized by sequentially accessing the data. 
+My favorite statements from the paper
+```
+This observation and further micro-benchmarks led us to
+state the following three rather simple and obvious rules
+(called “commandments”) for NUMA-affine scalable multicore parallelization:
+C1 Thou shalt not write thy neighbor’s memory randomly –
+chunk the data, redistribute, and then sort/work on
+your data locally.
+C2 Thou shalt read thy neighbor’s memory only sequentially – let the prefetcher hide the remote access latency.
+C3 Thou shalt not wait for thy neighbors – don’t use finegrained latching or locking and avoid synchronization
+points of parallel threads.
+```
+
 
 [Spark SQL: Relational Data Processing in Spark](https://dl.acm.org/doi/pdf/10.1145/2723372.2742797)  
 I believe this was the first paper that introduced Spark SQL features and the `Dataframe` API. 
