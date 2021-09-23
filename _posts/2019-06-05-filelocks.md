@@ -10,5 +10,6 @@ There are scenarios where sometimes, you might want to tell an another process s
 
 
 #References on filelocks
-* http://www.cs.uleth.ca/~holzmann/C/system/lockfile.html
-* https://gavv.github.io/articles/file-locks/
+[On the brokenness of file locks](pointer.de/blog/projects/locking.html)
+[Range Locking](http://www.cs.uleth.ca/~holzmann/C/system/lockfile.html)
+[File locking in Linux](https://gavv.github.io/articles/file-locks/)
