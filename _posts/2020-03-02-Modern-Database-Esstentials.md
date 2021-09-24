@@ -2,6 +2,9 @@ Some posts and links that I often refer too and I find useful to dig into basics
 
 You can find a more thorough list of great database papers at [here](https://github.com/rxin/db-readings)
 [Here](http://www.cs.cmu.edu/~pavlo/blog/index.html) is another blog from Andy Pavlo(one of my favorite DB profs in CMU)
+[Will Larson's list of technical papers](https://lethain.com/some-of-my-favorite-technical-papers/)
+The following list is additive to the above list. 
+
 
 [MonetDB/X100: Hyper-Pipelining Query Execution](http://cidrdb.org/cidr2005/papers/P19.pdf)   
 I think this is the first paper that shows the power of vectorized query execution on a column store.
