@@ -13,12 +13,13 @@ I have wanted to play with [eBPF](https://ebpf.io) for sometime now. Plenty of c
 [The	Next	Linux	Superpower:eBPF Primer](https://www.usenix.org/sites/default/files/conference/protected-files/srecon16europe_slides_goldshtein_linux.pdf)    
 A pretty good source of eBPF has been this [website](https://www.brendangregg.com/ebpf.html) and this [video](https://www.youtube.com/watch?v=JRFNIKUROPE) by Brendan Gregg. If you haven't tried out flamegraphs from his site, would recommend you to try it. 
 There is a dedicated website for eBPF that I found recently [ebpf.io](https://ebpf.io/)  
-An interesting discussion about eBPF and computational storage that I recently came across is [here](https://sniacmsiblog.org/2021/07/what-is-ebpf-and-why-does-it-matter-for-computational-storage/). Folks from SNIA discuss how eBPF could benefit computational storage.
-Here is couple of other [links](https://cyral.com/blog/lessons-using-ebpf-accelerating-cloud-native/) about how eBPF could accelerate applications
+An interesting discussion about eBPF and computational storage that I recently came across is [here](https://sniacmsiblog.org/2021/07/what-is-ebpf-and-why-does-it-matter-for-computational-storage/). In the talk, folks from SNIA discuss how eBPF could benefit computational storage.
 
 PCIe traffic measurement has always been a pain point. The best online tool I have come across has been [pcm](https://github.com/opcm/pcm). The granularity in this tool could 
 also be an issue. If your application is saturating PCIe for an entire duration, the results tend to be accurate, however if it is saturating in smaller intervals, I have observed
-pcm report weird results. An easier approach, if only one process is saturating the PCIe, might be to profile the amount of send and receive data in the application and measure from that.   
+pcm report weird results.
+An easier approach, if only one process is saturating the PCIe, might be to profile the amount of send and receive data in the application and measure from that.  
+
 [Notes and tools for Memory Perf Measurement](https://github.com/LucaCanali/Miscellaneous/blob/master/Spark_Notes/Tools_Linux_Memory_Perf_Measure.md)
 Depending on your need, system tools could probably be found Intel site [here](https://software.intel.com/content/www/us/en/develop/tools/catalog.html). 
 
