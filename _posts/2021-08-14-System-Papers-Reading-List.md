@@ -15,6 +15,8 @@ A pretty good source of eBPF has been this [website](https://www.brendangregg.co
 There is a dedicated website for eBPF that I found recently [ebpf.io](https://ebpf.io/)  
 An interesting discussion about eBPF and computational storage that I recently came across is [here](https://sniacmsiblog.org/2021/07/what-is-ebpf-and-why-does-it-matter-for-computational-storage/). In the talk, folks from SNIA discuss how eBPF could benefit computational storage.
 
+Detecting memory leak in a distributed environment could also be quite complicated. [Here](https://www.bo-yang.net/2015/03/30/debug-kernel-space-memory-leak) is a blog post about memory leaks in a distributed environment.      
+
 PCIe traffic measurement has always been a pain point. The best online tool I have come across has been [pcm](https://github.com/opcm/pcm). The granularity in this tool could 
 also be an issue. If your application is saturating PCIe for an entire duration, the results tend to be accurate, however if it is saturating in smaller intervals, I have observed
 pcm report weird results.
