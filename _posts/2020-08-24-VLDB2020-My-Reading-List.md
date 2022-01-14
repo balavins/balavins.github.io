@@ -32,6 +32,8 @@ a merge of the smaller input before broadcast
 Lessons learned section is a must-read. Compares execution time break-down of compiled queries with vectorization for various operators. 
 They compare multiple open-source and closed-souce databases for instruction efficiency and cache efficiency for various operators. Would be nice to know which closed source databases they were.     
 
+[Towards Scalable Dataframe Systems](https://arxiv.org/pdf/2001.00888.pdf)  
+The paper behind [Modin](https://modin.readthedocs.io/en/stable/experimental_features/index.html). Pandas acceleration behind the scenes by using multiple cores of the CPU
 
 
 Haven't read this one yet. Plan to do so when I can.
